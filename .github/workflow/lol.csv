@@ -1,0 +1,8 @@
+Serial No,Actor,Action,System Response
+1,User,View plant catalog,System displays various plant categories and selections.
+2,User,Browse and select desired plants,System adds selected plants to the shopping cart.
+3,User,Review items in the shopping cart,System displays shopping cart contents for review and adjustments.
+4,User,Select payment method,System presents options for payment methods (e.g., credit card, PayPal).
+5,User,Provide payment details,System verifies payment details and processes the transaction securely.
+6,User,Confirm purchase,System generates a confirmation message and receipt for the user.
+7,User,Receive confirmation and receipt,System prepares purchased plants for delivery or pickup as specified by the user.
