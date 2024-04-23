@@ -1,1 +1,22 @@
+name: Generate Sequence Diagram
 
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate-diagram:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Convert CSV to XML
+        run: |
+          python csv_to_xml.py 1.csv 1.xml
+
+      - name: Generate Sequence Diagram
+        run: |
+          drawio -x 1.xml -o output.png
